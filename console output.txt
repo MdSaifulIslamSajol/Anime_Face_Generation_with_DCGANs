@@ -1,0 +1,66 @@
+
+runfile('/home/saiful/anime_face_generation/Anime_Face_Generation_with_GANs/anime_face_generation_DCGAN.py', wdir='/home/saiful/anime_face_generation/Anime_Face_Generation_with_GANs')
+Random Seed:  6969
+
+
+
+Figures now render in the Plots pane by default. To make them also appear inline in the Console, uncheck "Mute Inline Plotting" under the Plots pane options menu. 
+
+
+ Generator(
+  (main): Sequential(
+    (0): ConvTranspose2d(100, 512, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (1): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (2): ReLU(inplace=True)
+    (3): ConvTranspose2d(512, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (4): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (5): ReLU(inplace=True)
+    (6): ConvTranspose2d(256, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (7): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (8): ReLU(inplace=True)
+    (9): ConvTranspose2d(128, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (10): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (11): ReLU(inplace=True)
+    (12): ConvTranspose2d(64, 3, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (13): Tanh()
+  )
+)
+Discriminator(
+  (main): Sequential(
+    (0): Conv2d(3, 64, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (1): LeakyReLU(negative_slope=0.2, inplace=True)
+    (2): Conv2d(64, 128, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (3): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (4): LeakyReLU(negative_slope=0.2, inplace=True)
+    (5): Conv2d(128, 256, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (6): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (7): LeakyReLU(negative_slope=0.2, inplace=True)
+    (8): Conv2d(256, 512, kernel_size=(4, 4), stride=(2, 2), padding=(1, 1), bias=False)
+    (9): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+    (10): LeakyReLU(negative_slope=0.2, inplace=True)
+    (11): Conv2d(512, 1, kernel_size=(4, 4), stride=(1, 1), bias=False)
+    (12): Sigmoid()
+  )
+)
+Starting Training Loop...
+[0/20][0/497]	Loss_D: 1.4711	Loss_G: 3.6661	D(x): 0.4601	D(G(z)): 0.3712 / 0.0386
+[1/20][0/497]	Loss_D: 0.5665	Loss_G: 6.5552	D(x): 0.6922	D(G(z)): 0.0152 / 0.0025
+[2/20][0/497]	Loss_D: 0.7439	Loss_G: 5.2557	D(x): 0.6009	D(G(z)): 0.0081 / 0.0165
+[3/20][0/497]	Loss_D: 0.5179	Loss_G: 6.0811	D(x): 0.8498	D(G(z)): 0.2352 / 0.0040
+[4/20][0/497]	Loss_D: 0.3663	Loss_G: 8.1472	D(x): 0.9266	D(G(z)): 0.2160 / 0.0006
+[5/20][0/497]	Loss_D: 0.6953	Loss_G: 8.3940	D(x): 0.9205	D(G(z)): 0.3891 / 0.0005
+[6/20][0/497]	Loss_D: 0.2422	Loss_G: 5.2937	D(x): 0.9593	D(G(z)): 0.1524 / 0.0123
+[7/20][0/497]	Loss_D: 0.9067	Loss_G: 8.4988	D(x): 0.9594	D(G(z)): 0.5047 / 0.0005
+[8/20][0/497]	Loss_D: 0.2542	Loss_G: 3.7797	D(x): 0.9591	D(G(z)): 0.1730 / 0.0358
+[9/20][0/497]	Loss_D: 0.1568	Loss_G: 5.3275	D(x): 0.9039	D(G(z)): 0.0358 / 0.0108
+[10/20][0/497]	Loss_D: 0.2153	Loss_G: 4.1433	D(x): 0.8742	D(G(z)): 0.0665 / 0.0222
+[11/20][0/497]	Loss_D: 0.2397	Loss_G: 4.5424	D(x): 0.9231	D(G(z)): 0.1299 / 0.0209
+[12/20][0/497]	Loss_D: 0.3130	Loss_G: 3.3965	D(x): 0.8071	D(G(z)): 0.0663 / 0.0559
+[13/20][0/497]	Loss_D: 0.6247	Loss_G: 5.9072	D(x): 0.9174	D(G(z)): 0.3659 / 0.0041
+[14/20][0/497]	Loss_D: 0.2698	Loss_G: 3.3034	D(x): 0.8531	D(G(z)): 0.0670 / 0.0582
+[15/20][0/497]	Loss_D: 0.6211	Loss_G: 1.4417	D(x): 0.6454	D(G(z)): 0.0759 / 0.3051
+[16/20][0/497]	Loss_D: 1.0990	Loss_G: 5.5696	D(x): 0.9790	D(G(z)): 0.5649 / 0.0080
+[17/20][0/497]	Loss_D: 0.6690	Loss_G: 7.1885	D(x): 0.9641	D(G(z)): 0.4072 / 0.0016
+[18/20][0/497]	Loss_D: 0.2911	Loss_G: 4.6509	D(x): 0.9727	D(G(z)): 0.2110 / 0.0136
+[19/20][0/497]	Loss_D: 0.3075	Loss_G: 2.2247	D(x): 0.7722	D(G(z)): 0.0185 / 0.1575
+Animation size has reached 21079923 bytes, exceeding the limit of 20971520.0. If you're sure you want a larger animation embedded, set the animation.embed_limit rc parameter to a larger value (in MB). This and further frames will be dropped.
